@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Projeto</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+</style>
+
+<body>
+
+    <script>
+        function stopDefAction(evt) {
+          evt.preventDefault();
+          console.log("ok")
+        }
+  
+        document
+          .getElementById("formCadastroArtista")
+          .addEventListener("submit", stopDefAction, false);
+    </script>
+
+<div class="container">
+    <h1>CADASTRO DE ARTISTA</h1>
+    <form id="formCadastroArtista">
+        <div class="form-group">
+            <label for="idprojeto">ID PROJETO</label>
+            <input type="number" id="idprojeto" name="idprojeto" placeholder="ID PROJETO">
+        </div>
+        <div class="form-group">
+            <label for="idcoletivo">ID COLETIVO</label>
+            <input type="number" id="idcoletivo" name="idcoletivo" placeholder="ID COLETIVO">
+        </div>
+        <div class="form-group">
+            <label for="nomeprojeto">NOME DO PROJETO</label>
+            <input type="text" id="nomeprojeto" name="nomeprojeto" placeholder="NOME DO PROJETO">
+        </div>
+        <div class="form-group">
+            <label for="segmento">SEGMENTO</label>
+            <input type="text" id="segmento" name="segmento" placeholder="SEGMENTO">
+        </div>
+        <div class="form-group">
+            <label for="datainicio">DATA INÍCIO</label>
+            <input type="date" id="datainicio" name="datainicio">
+        </div>
+        <div class="form-group">
+            <label for="datafim">DATA FIM</label>
+            <input type="date" id="datafim" name="datafim">
+        </div>
+        <div class="form-group">
+            <label for="publicoalvo">PÚBLICO ALVO</label>
+            <textarea id="publicoalvo" name="publicoalvo" placeholder="PÚBLICO ALVO"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="linkedital">LINK DO EDITAL</label>
+            <input type="text" id="linkedital" name="linkedital" placeholder="LINK DO EDITAL">
+        </div>
+        <div class="form-group">
+            <label for="nomeedital">NOME DO EDITAL</label>
+            <input type="text" id="nomeedital" name="nomeedital" placeholder="NOME DO EDITAL">
+        </div>
+        <div class="form-group">
+            <label for="datarealizado">DATA REALIZADO</label>
+            <input type="date" id="datarealizado" name="datarealizado">
+        </div>
+        <div class="form-group">
+            <label for="valorprojeto">VALOR DO PROJETO</label>
+            <input type="number" step="0.01" id="valorprojeto" name="valorprojeto" placeholder="VALOR DO PROJETO">
+        </div>
+        <div class="form-group">
+            <label for="valoredital">VALOR DO EDITAL</label>
+            <input type="number" step="0.01" id="valoredital" name="valoredital" placeholder="VALOR DO EDITAL">
+        </div>
+        <div class="form-group">
+            <label for="linkdrive">LINK DO DRIVE</label>
+            <input type="text" id="linkdrive" name="linkdrive" placeholder="LINK DO DRIVE">
+        </div>
+        <div class="form-group">
+            <label for="datacad">DATA DE CADASTRO</label>
+            <input type="datetime-local" id="datacad" name="datacad">
+        </div>
+        <div class="form-group">
+            <label for="ativo">ATIVO</label>
+            <input type="text" id="ativo" name="ativo" placeholder="ATIVO (S/N)">
+        </div>
+        <div class="form-group">
+            <button type="submit">CADASTRAR</button>
+        </div>
+    </form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
